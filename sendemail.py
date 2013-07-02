@@ -6,11 +6,10 @@ sys.setdefaultencoding('utf-8')
 from email.mime.text import MIMEText
 from email.MIMEMultipart import MIMEMultipart
 #############
-mailto_list=["18359255605@139.com"]
 #####################
 mail_host="smtp.163.com"
 mail_user="xqiugen"
-mail_pass="123456789.0"
+mail_pass="123456"
 mail_postfix="163.com"
 #print mail_host
 #print mail_user
@@ -37,9 +36,3 @@ def send_mail(to_list,sub,content):
     except Exception, e:
         print str(e)
         return False
-if __name__ == '__main__':
-    print "start"
-    if send_mail(mailto_list,"subject","content"):
-        print "true"
-    else:
-        print "fail"

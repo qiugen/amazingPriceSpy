@@ -9,8 +9,9 @@ import string
 import time
 sys.setdefaultencoding('utf-8')
 filePathName='linkrecord.txt'
-keylist = ["网友推荐"] #keyword for matching
-#strhtml = unicode(strhtml,'gb2312','ignore').encode('utf-8','ignore')
+urlOfwebsite='http://www.smzdm.com'
+keylist = ["神价","手慢无"] #keyword for matching
+mailList = ["1835xxx5605@139.com"];
 #print strhtml[:1000]
 def hasThisLink(newlink,filePathName):
     filehandle = open(filePathName,'r')
@@ -29,7 +30,7 @@ def hasThisLink(newlink,filePathName):
 #start a loop
 while True:
     #get the page
-    sock = urllib.urlopen("http://www.smzdm.com")# get the content by url
+    sock = urllib.urlopen(urlOfwebsite)# get the content by url
     strhtml = sock.read()
     from bs4 import BeautifulSoup
     #parser the page
@@ -74,7 +75,6 @@ while True:
     if sendThisMail:
         mailContentUtf8=mailContent.encode('utf-8','ignore')
         subjectTileUtf8=subjectTitle.encode('utf-8','ignore')
-        mailList = ["18359255605@139.com"];
 # def send_mail(to_list,sub,content)
         #print "subjectTileUtf8",subjectTileUtf8
         #print "mailContentUtf8",mailContentUtf8
