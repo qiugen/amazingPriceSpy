@@ -1,6 +1,6 @@
 ##amazingPriceSpy
 ===============
-This package contains '__spider.py__' and '__sendemail.py__'
+This package contains ' __spider.py__ ' and ' __sendemail.py__ '
 
 It can be used to listen the www.smzdm.com or www.rehui.com each 20 second, :ewWhen the amazing price come up, the masseage will send to your 139mail. Then, you will get the link and contant by phone message from 139mail. In this way, you can get the imformation at first time.
 
