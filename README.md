@@ -6,7 +6,7 @@ It can be used to listen the www.smzdm.com or www.rehui.com each 20 second, :ewW
 
 before you use it you need to change sth __sendemail.py__, replace it by your own mail configure.
 
-__mailto_list__, __mail_host__, __mail_pass__,__mail_postfix__
+__mailto_list__, __mail_host__, __mail_pass__, __mail_postfix__
 >mail_host="smtp.163.com"
 mail_user="username"
 mail_pass="pwd"
